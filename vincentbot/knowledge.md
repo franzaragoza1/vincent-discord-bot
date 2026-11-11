@@ -1,24 +1,24 @@
 # SETUP GUIDE (English UI names)
 
 
-## Before you start
+## 01 · Before you start
 - A Windows PC with iRacing .
 
 - Headphones or speakers and a microphone .
 
 - An internet connection. VINCENT's brain, voice and ears run in the cloud.
 
-- A Discord or Google account to sign in, and a Twitch account: VINCENT is free in exchange for following the channel (https://www.twitch.tv/franky_franchicha) .
+- A Twitch account to sign in (Discord or Google also work, then you connect Twitch): VINCENT is free in exchange for following the channel (https://www.twitch.tv/franky_franchicha) .
 
 - An OpenRouter account with a little credit. About $5 is plenty to start. VINCENT itself is free and charges nothing: you pay OpenRouter directly for what you use.
 
 - Optional: a button on your wheel for the radio. Without a wheel you can talk with the Mic button in the app.
 
 
-## Download and install
-- Go to account.vincent-ai.app/download (https://account.vincent-ai.app/download) and sign in with Discord or Google.
+## 02 · Download and install
+- Go to account.vincent-ai.app/download (https://account.vincent-ai.app/download) and sign in with Twitch (or with Discord or Google, then connect Twitch).
 
-- Connect your Twitch account and follow the channel ( twitch.tv/franky_franchicha (https://www.twitch.tv/franky_franchicha) ). If you weren’t following yet, follow on Twitch and press I follow now — check again .
+- Follow the channel ( twitch.tv/franky_franchicha (https://www.twitch.tv/franky_franchicha) ). If you weren’t following yet, follow on Twitch and press I follow now — check again .
 
 - Download the installer and run it.
 
@@ -30,12 +30,12 @@ Update to x.x.x
  at the top, click it to update right away.
 
 
-## Sign in
+## 03 · Sign in
 VINCENT asks you to sign in the first time you open it.
 
 - Click Sign in . Your browser opens.
 
-- Sign in with the same Discord or Google account.
+- Sign in with the same account (Twitch, Discord or Google).
 
 - Check that the code in the browser matches the one in the app and confirm. VINCENT carries on by itself.
 
@@ -46,7 +46,7 @@ account.vincent-ai.app (https://account.vincent-ai.app/)
 . If your internet drops, VINCENT keeps working for a few days with your last sign-in.
 
 
-## Get your OpenRouter key
+## 04 · Get your OpenRouter key
 One key powers everything: the engineer's brain, his voice and his ears.
 
 - Create an account at openrouter.ai (https://openrouter.ai) .
@@ -61,7 +61,7 @@ Treat the key like a password.
  Never share it or post it in a screenshot. VINCENT stores it in the Windows Credential Manager and only ever sends it to OpenRouter. With a credit limit, a leaked key can never cost you more than that limit.
 
 
-## The setup wizard
+## 05 · The setup wizard
 The first time, VINCENT walks you through these screens. You can change everything later from 
 Settings
  at the top of the app.
@@ -133,7 +133,7 @@ How what you say on the radio is turned into text for the engineer:
 You'll see a summary of everything you chose. Now open iRacing.
 
 
-## Start a session
+## 06 · Start a session
 - Open iRacing and join a session (practice, qualifying or race). Being in the menus isn't enough.
 
 - In VINCENT, on the Session setup screen, check the options and press START .
@@ -169,7 +169,7 @@ borderless window
  mode, not exclusive full screen.
 
 
-## Talking to Vincent
+## 07 · Talking to Vincent
 Press your radio button, speak, and let go (or press again in toggle mode). You can also type to him in 
 Write to Vincent
 . Talk to him the way you'd talk to an engineer:
@@ -218,7 +218,7 @@ Mute | Silences the radio until you press it again.
 
 Repeat | Says the last message again.
 
-Bad call | Flags his last message as wrong, with everything he saw at that moment. It helps a lot when you report a bug .
+Report | Tell us what went wrong, right when it happens. It reaches the team with Vincent’s last message, what he was looking at and the end of the session log — never your keys.
 
 The 
 Timing
@@ -227,7 +227,7 @@ Log
  tab shows what's going on behind the scenes, and has a button to open the logs folder.
 
 
-## Streaming
+## 08 · Streaming
 ### Vincent's voice in OBS
 
 In OBS, add an 
@@ -283,7 +283,7 @@ Control OBS
  ends it.
 
 
-## Costs and credit
+## 09 · Costs and credit
 - VINCENT is free in exchange for following the Twitch channel while you use it. The only cost is AI and voice usage, which you pay straight to OpenRouter.
 
 - What you've spent this session shows live at the top of the app.
@@ -293,7 +293,7 @@ Control OBS
 - A credit limit on your key is the best safety net.
 
 
-## Troubleshooting
+## 10 · Troubleshooting
 Q: Vincent doesn't answer
 A: 
 Check the lights at the top of the app. If the LLM light is off or you see 
@@ -350,14 +350,14 @@ This version no longer works
 : the new one is downloading by itself.
 
 
-## Get help and report bugs
+## 11 · Get help and report bugs
 Join the 
 VINCENT Discord (https://discord.gg/QKNpvAFxPN)
 :
 
 - #setup-help for anything about installing or configuring. Include your app version and a screenshot.
 
-- #bug-reports when something's wrong. Press Bad call at the moment it happens, then open the Log tab → Open logs folder and attach the latest log. Blur any keys first.
+- Something wrong? Press Report in the app right when it happens and write what you expected: it arrives with everything needed to fix it. For longer discussions, open a post in #bug-reports .
 
 - #feature-requests for ideas. Vote on the ones you want with 👍.
 
@@ -365,24 +365,24 @@ VINCENT Discord (https://discord.gg/QKNpvAFxPN)
 # GUÍA DE CONFIGURACIÓN (nombres de la interfaz en español)
 
 
-## Antes de empezar
+## 01 · Antes de empezar
 - Un PC con Windows e iRacing .
 
 - Auriculares o altavoces y un micrófono .
 
 - Conexión a internet: el cerebro, la voz y el oído de Vicen funcionan en la nube.
 
-- Una cuenta de Discord o Google para iniciar sesión y una de Twitch : VINCENT es gratis a cambio de seguir el canal (https://www.twitch.tv/franky_franchicha) .
+- Una cuenta de Twitch para entrar (también vale Discord o Google, y luego conectas Twitch): VINCENT es gratis a cambio de seguir el canal (https://www.twitch.tv/franky_franchicha) .
 
 - Una cuenta de OpenRouter con algo de saldo; con unos 5 $ vas sobrado para empezar. VINCENT es gratis y no cobra nada: lo que uses se lo pagas directamente a OpenRouter.
 
 - Opcional: un botón del volante para la radio. Sin volante, hablas con el botón Micro de la app.
 
 
-## Descargar e instalar
-- Entra en account.vincent-ai.app/download (https://account.vincent-ai.app/download) e inicia sesión con Discord o Google.
+## 02 · Descargar e instalar
+- Entra en account.vincent-ai.app/download (https://account.vincent-ai.app/download) y entra con Twitch (o con Discord o Google y luego conecta Twitch).
 
-- Conecta tu cuenta de Twitch y sigue el canal ( twitch.tv/franky_franchicha (https://www.twitch.tv/franky_franchicha) ). Si aún no lo seguías, síguelo en Twitch y pulsa Ya le sigo, comprobar .
+- Sigue el canal ( twitch.tv/franky_franchicha (https://www.twitch.tv/franky_franchicha) ). Si aún no lo seguías, síguelo en Twitch y pulsa Ya le sigo, comprobar .
 
 - Descarga el instalador y ábrelo.
 
@@ -394,12 +394,12 @@ Actualizar a x.x.x
 , púlsalo para hacerlo al momento.
 
 
-## Iniciar sesión
+## 03 · Iniciar sesión
 La primera vez que abres VINCENT te pide entrar.
 
 - Pulsa Iniciar sesión : se abre el navegador.
 
-- Entra con la misma cuenta de Discord o Google.
+- Entra con la misma cuenta (Twitch, Discord o Google).
 
 - Comprueba que el código del navegador es el mismo que el de la app y confirma. VINCENT sigue solo.
 
@@ -410,7 +410,7 @@ account.vincent-ai.app (https://account.vincent-ai.app/)
 . Si se te cae internet, sigue funcionando unos días con tu último inicio de sesión.
 
 
-## Saca tu clave de OpenRouter
+## 04 · Saca tu clave de OpenRouter
 Con una sola clave funciona todo: el cerebro del ingeniero, su voz y su oído.
 
 - Crea una cuenta en openrouter.ai (https://openrouter.ai) .
@@ -425,7 +425,7 @@ Trátala como una contraseña.
  No la compartas ni la enseñes en capturas. VINCENT la guarda en el Administrador de credenciales de Windows y solo se la envía a OpenRouter. Con el límite de crédito, una clave filtrada nunca te costará más que ese límite.
 
 
-## El asistente de configuración
+## 05 · El asistente de configuración
 La primera vez, VINCENT te lleva por estas pantallas. Todo se puede cambiar después desde 
 Ajustes
 , arriba en la app.
@@ -497,7 +497,7 @@ Cómo se convierte en texto lo que dices por radio:
 Verás un resumen de todo lo que has elegido. Ahora abre iRacing.
 
 
-## Arrancar una sesión
+## 06 · Arrancar una sesión
 - Abre iRacing y entra en una sesión (entreno, clasificación o carrera). Estar en los menús no basta.
 
 - En VINCENT, en Preparar sesión , revisa las opciones y pulsa ARRANCAR .
@@ -533,7 +533,7 @@ ventana sin bordes
 , no en pantalla completa exclusiva.
 
 
-## Hablar con Vicen
+## 07 · Hablar con Vicen
 Pulsa el botón de radio, habla y suelta (o vuelve a pulsar si usas el modo de pulsar y cerrar). También puedes escribirle en 
 Escribir a Vicen
 . Háblale como a un ingeniero:
@@ -582,7 +582,7 @@ Silenciar | Silencia la radio hasta que lo vuelvas a pulsar.
 
 Repetir | Repite el último mensaje.
 
-Fallo | Marca su último mensaje como erróneo, con todo lo que veía en ese momento. Ayuda mucho para reportar un fallo .
+Reportar | Cuéntanos qué ha fallado justo cuando pasa. Nos llega con el último mensaje de Vicen, lo que estaba viendo y el final del registro de la sesión; nunca tus claves.
 
 La pestaña 
 Timing
@@ -591,7 +591,7 @@ Registro
  muestra lo que pasa por dentro y tiene un botón para abrir la carpeta de logs.
 
 
-## Directos
+## 08 · Directos
 ### La voz de Vicen en OBS
 
 En OBS añade una fuente 
@@ -647,7 +647,7 @@ Controlar OBS
  lo corta.
 
 
-## Costes y saldo
+## 09 · Costes y saldo
 - VINCENT es gratis a cambio de seguir el canal de Twitch mientras lo uses. El único gasto es el uso de IA y voz, que pagas directamente a OpenRouter.
 
 - Lo que llevas gastado en la sesión se ve en directo arriba en la app.
@@ -657,7 +657,7 @@ Controlar OBS
 - Un límite de crédito en la clave es tu mejor red de seguridad.
 
 
-## Problemas frecuentes
+## 10 · Problemas frecuentes
 Q: Vicen no contesta
 A: 
 Mira los indicadores de arriba en la app. Si el de LLM está apagado o ves 
@@ -714,14 +714,14 @@ Esta versión ya no funciona
 : la nueva se está descargando sola.
 
 
-## Ayuda y reportar fallos
+## 11 · Ayuda y reportar fallos
 Entra en el 
 Discord de VINCENT (https://discord.gg/QKNpvAFxPN)
 :
 
 - #setup-help para todo lo de instalar y configurar. Indica tu versión y añade una captura.
 
-- #bug-reports si algo va mal. Pulsa Fallo en el momento, abre la pestaña Registro → Abrir carpeta de logs y adjunta el último log (tapa antes cualquier clave).
+- ¿Algo va mal? Pulsa Reportar en la app en el momento y escribe qué esperabas: nos llega con todo lo necesario para arreglarlo. Para comentarlo con calma, abre un post en #bug-reports .
 
 - #feature-requests para ideas; vota con 👍 las que quieras.
 
@@ -739,7 +739,7 @@ Q: How much does a race cost to run?
 A: It depends on the AI model you pick in settings: cheaper models cost cents per race, the best ones a bit more. The app shows your spend live, so there are no surprises.
 
 Q: What do I need?
-A: A Windows PC, iRacing, a microphone, an internet connection and a Discord or Google account to sign in. Plus one OpenRouter API key — the setup wizard walks you through it.
+A: A Windows PC, iRacing, a microphone, an internet connection and a Twitch, Discord or Google account to sign in. Plus one OpenRouter API key — the setup wizard walks you through it.
 
 Q: Why do I need to sign in?
 A: To download VINCENT and to use it. It tells us who’s using it, stops anyone reselling it, and lets us switch off a broken version fast. Each account works on up to 3 PCs, which you can manage from your account. If your internet drops mid-race, it keeps working.
@@ -764,7 +764,7 @@ P: ¿Cuánto cuesta cada carrera?
 R: Depende del modelo de IA que elijas en ajustes: los más baratos cuestan céntimos por carrera y los mejores algo más. La app te enseña el gasto en directo, así que no hay sorpresas.
 
 P: ¿Qué necesito?
-R: Un PC con Windows, iRacing, un micrófono, conexión a internet y una cuenta de Discord o Google para entrar. Y una clave de OpenRouter: el asistente te guía para sacarla.
+R: Un PC con Windows, iRacing, un micrófono, conexión a internet y una cuenta de Twitch, Discord o Google para entrar. Y una clave de OpenRouter: el asistente te guía para sacarla.
 
 P: ¿Por qué hay que iniciar sesión?
 R: Para descargar VINCENT y para usarlo. Así sabemos quién lo usa, evitamos que alguien lo revenda y podemos retirar rápido una versión con fallos. Cada cuenta funciona en hasta 3 PCs, que gestionas desde tu cuenta. Si se te cae internet en plena carrera, sigue funcionando.

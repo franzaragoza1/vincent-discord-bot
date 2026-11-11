@@ -26,5 +26,5 @@ Cerebro: Gemini Flash en Vertex AI, pagado con los créditos de Google Cloud (d�
 
 - **Actualizar** (después de cambiar el código o la guía): `gcloud compute instances reset vincent-bot --zone us-central1-a`
 - **Ver qué hace**: `gcloud compute ssh vincent-bot --zone us-central1-a --command 'sudo journalctl -u vincentbot -f'`
-- **Regenerar el conocimiento** cuando cambie la guía: `python tools_build_knowledge.py <carpeta vincent-ai-web> <carpeta fuentes guía> vincentbot/knowledge.md`
+- **Regenerar el conocimiento** cuando cambie la guía: `python tools_build_knowledge.py <carpeta vincent-ai-web> vincentbot/knowledge.md`
 - **Pruebas**: `pip install -r requirements.txt pytest && pytest -q`

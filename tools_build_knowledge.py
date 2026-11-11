@@ -1,7 +1,7 @@
 """Genera vincentbot/knowledge.md a partir de la guía y la FAQ de la web (vincent-ai-web)."""
 import re, sys, importlib.util
 from bs4 import BeautifulSoup
-web, guide_dir, out = sys.argv[1], sys.argv[2], sys.argv[3]
+web, out = sys.argv[1], sys.argv[2]
 
 def md(html):
     soup = BeautifulSoup(html, "html.parser")
@@ -18,16 +18,14 @@ def md(html):
     t = re.sub(r"[ \t]+", " ", t); t = re.sub(r"\n\s*\n+", "\n\n", t)
     return t.strip()
 
-def load(n):
-    s = importlib.util.spec_from_file_location(n, f"{guide_dir}/{n}.py"); m = importlib.util.module_from_spec(s); s.loader.exec_module(m); return m
-
+gdoc = BeautifulSoup(open(f"{web}/guide.html", encoding="utf-8").read(), "html.parser")
 parts = []
-for lang, name in [("en", "content_en"), ("es", "content_es")]:
-    c = load(name)
-    head = "SETUP GUIDE (English UI names)" if lang == "en" else "GUÍA DE CONFIGURACIÓN (nombres de la interfaz en español)"
+for main in gdoc.find_all("main", attrs={"data-lang-block": True}):
+    head = "SETUP GUIDE (English UI names)" if main["data-lang-block"] == "en" else "GUÍA DE CONFIGURACIÓN (nombres de la interfaz en español)"
     parts.append(f"# {head}\n")
-    for i, t, e, h in c.SECTIONS:
-        parts.append(f"## {t}\n{md(h)}\n")
+    for sec in main.find_all("section", class_="gsec"):
+        title = sec.find(class_="ph").find("span").get_text(" ", strip=True)
+        parts.append(f"## {title}\n{md(str(sec.find(class_='gbody')))}\n")
 
 idx = BeautifulSoup(open(f"{web}/index.html", encoding="utf-8").read(), "html.parser")
 faq = idx.find(id="faq")
