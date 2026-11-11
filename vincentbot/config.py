@@ -2,7 +2,15 @@
 from __future__ import annotations
 
 import os
+import re
 from dataclasses import dataclass, field
+
+
+def clean_token(raw: str) -> str:
+    """Limpia lo que se cuela al pegar en una terminal: marcas de pegado (ESC[200~ / ESC[201~),
+    saltos de línea, espacios y cualquier carácter que no puede ir en un token."""
+    raw = re.sub(r"\x1b\[20[01]~", "", raw or "")
+    return re.sub(r"[^A-Za-z0-9._-]", "", raw)
 
 
 def _ids(name: str, default: str) -> set[int]:
@@ -12,7 +20,7 @@ def _ids(name: str, default: str) -> set[int]:
 
 @dataclass
 class Config:
-    discord_token: str = field(default_factory=lambda: os.getenv("DISCORD_TOKEN", ""))
+    discord_token: str = field(default_factory=lambda: clean_token(os.getenv("DISCORD_TOKEN", "")))
     guild_id: int = field(default_factory=lambda: int(os.getenv("GUILD_ID", "1569612974660911147")))
 
     # --- cerebro ---
@@ -23,7 +31,7 @@ class Config:
     gemini_models: list[str] = field(default_factory=lambda: [m.strip() for m in os.getenv(
         "GEMINI_MODELS", "gemini-3.8-flash,gemini-3.8-flash-preview,gemini-3.5-flash,gemini-3.5-flash-preview,gemini-3-flash,gemini-flash-latest,gemini-2.5-flash").split(",") if m.strip()])
     # Respaldo gratis (opcional): Groq, API compatible con OpenAI.
-    groq_api_key: str = field(default_factory=lambda: os.getenv("GROQ_API_KEY", ""))
+    groq_api_key: str = field(default_factory=lambda: clean_token(os.getenv("GROQ_API_KEY", "")))
     groq_model: str = field(default_factory=lambda: os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"))
 
     # --- canales y roles del servidor de VINCENT ---

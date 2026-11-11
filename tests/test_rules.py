@@ -101,3 +101,9 @@ def test_trim():
 def test_welcome_texts_fit():
     for k, v in texts.WELCOME.items():
         assert len(v.format(name="Someone With A Long Name")) < 2000, k
+
+
+def test_clean_token_removes_paste_garbage():
+    from vincentbot.config import clean_token
+    assert clean_token("\x1b[200~MTU2.abc-DEF_9\x1b[201~\n") == "MTU2.abc-DEF_9"
+    assert clean_token("  gsk_ABC123 \r\n") == "gsk_ABC123"
