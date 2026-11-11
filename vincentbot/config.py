@@ -21,7 +21,7 @@ class Config:
     gcp_project: str = field(default_factory=lambda: os.getenv("GCP_PROJECT", ""))
     gcp_location: str = field(default_factory=lambda: os.getenv("GCP_LOCATION", "global"))
     gemini_models: list[str] = field(default_factory=lambda: [m.strip() for m in os.getenv(
-        "GEMINI_MODELS", "gemini-3-flash,gemini-3-flash-preview,gemini-2.5-flash,gemini-flash-latest").split(",") if m.strip()])
+        "GEMINI_MODELS", "gemini-3.8-flash,gemini-3.8-flash-preview,gemini-3.5-flash,gemini-3.5-flash-preview,gemini-3-flash,gemini-flash-latest,gemini-2.5-flash").split(",") if m.strip()])
     # Respaldo gratis (opcional): Groq, API compatible con OpenAI.
     groq_api_key: str = field(default_factory=lambda: os.getenv("GROQ_API_KEY", ""))
     groq_model: str = field(default_factory=lambda: os.getenv("GROQ_MODEL", "openai/gpt-oss-120b"))
